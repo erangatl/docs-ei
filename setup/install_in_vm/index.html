@@ -182,7 +182,7 @@
         </div>
         <div class="md-flex__ellipsis md-header__version-select">
             <div class="mb-tabs__dropdown version-select">
-                <a class="md-tabs__link md-tabs__dropdown-link" href="#!" data-target="version-select-dropdown">7.0.0</a>
+                <a class="md-tabs__link md-tabs__dropdown-link" href="#!" data-target="version-select-dropdown">5.8.0</a>
                 <ul id="version-select-dropdown" class="mb-tabs__dropdown-content" tabindex="0">
                     <!-- Versions will added here dynamically -->
                     <li class="md-tabs__item mb-tabs__dropdown">
@@ -278,7 +278,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../concepts.md" title="Concepts" class="md-tabs__link">
+        <a href="../../concepts/concepts/" title="Concepts" class="md-tabs__link">
           Concepts
         </a>
       
@@ -310,7 +310,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../develop/design.md" title="Developer Experience" class="md-tabs__link">
+        <a href="../../develop/designing-an-integration-usecase/" title="Developer Experience" class="md-tabs__link">
           Developer Experience
         </a>
       
@@ -327,7 +327,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../samples/invoking_restful_service.md" title="Use Cases" class="md-tabs__link">
+        <a href="../../use-cases/guides/" title="Use Cases" class="md-tabs__link">
           Use Cases
         </a>
       
@@ -342,7 +342,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../admin/user_management.md" title="Administration and Observability" class="md-tabs__link">
+        <a href="../../administer-and-observe/observability/" title="Administration and Observability" class="md-tabs__link">
           Administration and Observability
         </a>
       
@@ -551,7 +551,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts.md" title="Concepts" class="md-nav__link">
+    <a href="../../concepts/concepts/" title="Concepts" class="md-nav__link">
       Concepts
     </a>
   </li>
@@ -638,29 +638,62 @@
     <ul class="md-nav__list" data-md-scrollfix>
         
         <li class="md-nav__item">
-  <a href="#download-and-install-the-product" title="Download and install the product" class="md-nav__link">
-    Download and install the product
+  <a href="#installing-the-wso2-micro-integrator" title="Installing the WSO2 Micro Integrator" class="md-nav__link">
+    Installing the WSO2 Micro Integrator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-home-directory" title="Accessing the HOME directory" class="md-nav__link">
+    Accessing the HOME directory
   </a>
   
 </li>
         
-        <li class="md-nav__item">
-  <a href="#access-the-home-directory" title="Access the HOME directory" class="md-nav__link">
-    Access the HOME directory
+          <li class="md-nav__item">
+  <a href="#uninstalling-the-product" title="Uninstalling the product" class="md-nav__link">
+    Uninstalling the product
   </a>
   
 </li>
         
-        <li class="md-nav__item">
-  <a href="#uninstall-the-product" title="Uninstall the product" class="md-nav__link">
-    Uninstall the product
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
         <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
+  <a href="#running-the-micro-integrator" title="Running the Micro Integrator" class="md-nav__link">
+    Running the Micro Integrator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-installer" title="Using the installer" class="md-nav__link">
+    Using the installer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-binary-distribution" title="Using the binary distribution" class="md-nav__link">
+    Using the binary distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+        <li class="md-nav__item">
+  <a href="#stopping-the-micro-in-tegrator" title="Stopping the Micro In tegrator" class="md-nav__link">
+    Stopping the Micro In tegrator
   </a>
   
 </li>
@@ -1092,7 +1125,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/creating_keystores.md" title="Creating New Keystores" class="md-nav__link">
+    <a href="../security/creating_keystores/" title="Creating New Keystores" class="md-nav__link">
       Creating New Keystores
     </a>
   </li>
@@ -1104,7 +1137,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/importing_ssl_certificate.md" title="Adding SSL certificates to keystores" class="md-nav__link">
+    <a href="../security/importing_ssl_certificate/" title="Adding SSL certificates to keystores" class="md-nav__link">
       Adding SSL certificates to keystores
     </a>
   </li>
@@ -1116,7 +1149,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/renewing_ca_signed_certificate_in_keystore.md" title="Renewing a CA-signed Certificate" class="md-nav__link">
+    <a href="../security/renewing_ca_signed_certificate_in_keystore/" title="Renewing a CA-signed Certificate" class="md-nav__link">
       Renewing a CA-signed Certificate
     </a>
   </li>
@@ -1128,7 +1161,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/configuring_keystores.md" title="Configuring Keystores" class="md-nav__link">
+    <a href="../security/configuring_keystores/" title="Configuring Keystores" class="md-nav__link">
       Configuring Keystores
     </a>
   </li>
@@ -1145,7 +1178,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/single_key_encryption.md" title="Using Symmetric Encryption" class="md-nav__link">
+    <a href="../security/single_key_encryption/" title="Using Symmetric Encryption" class="md-nav__link">
       Using Symmetric Encryption
     </a>
   </li>
@@ -1157,7 +1190,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/encrypting_plain_text.md" title="Encrypting Plain Text" class="md-nav__link">
+    <a href="../security/encrypting_plain_text/" title="Encrypting Plain Text" class="md-nav__link">
       Encrypting Plain Text
     </a>
   </li>
@@ -1169,7 +1202,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/mitigating_csrf.md" title="Mitigating Cross Site Request Forgery Attacks" class="md-nav__link">
+    <a href="../security/mitigating_csrf/" title="Mitigating Cross Site Request Forgery Attacks" class="md-nav__link">
       Mitigating Cross Site Request Forgery Attacks
     </a>
   </li>
@@ -1181,7 +1214,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../security/mitigating_css.md" title="Mitigating Cross Site Scripting" class="md-nav__link">
+    <a href="../security/mitigating_css/" title="Mitigating Cross Site Scripting" class="md-nav__link">
       Mitigating Cross Site Scripting
     </a>
   </li>
@@ -1217,8 +1250,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tuning_db_performance/" title="Tuning Database Performance" class="md-nav__link">
-      Tuning Database Performance
+    <a href="../tuning_jvm_performance/" title="Tuning JVM Performance" class="md-nav__link">
+      Tuning JVM Performance
     </a>
   </li>
 
@@ -1299,7 +1332,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/design.md" title="Designing an Integration Use Case" class="md-nav__link">
+    <a href="../../develop/designing-an-integration-usecase/" title="Designing an Integration Use Case" class="md-nav__link">
       Designing an Integration Use Case
     </a>
   </li>
@@ -1311,7 +1344,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/testing.md" title="Testing an Integration Use Case" class="md-nav__link">
+    <a href="../../develop/testing/" title="Testing an Integration Use Case" class="md-nav__link">
       Testing an Integration Use Case
     </a>
   </li>
@@ -1323,8 +1356,32 @@
 
 
   <li class="md-nav__item">
-    <a href="../../develop/cicd.md" title="Continuous Development and Deployment" class="md-nav__link">
+    <a href="../../develop/cicd/" title="Continuous Development and Deployment" class="md-nav__link">
       Continuous Development and Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../develop/wSO2-Integration-Studio/" title="WSO2 Integration Studio" class="md-nav__link">
+      WSO2 Integration Studio
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../develop/working-with-WSO2-Integration-Studio/" title="Working with Integration Studio" class="md-nav__link">
+      Working with Integration Studio
     </a>
   </li>
 
@@ -1378,7 +1435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../samples/invoking_restful_service.md" title="Invoking a RESTful Service" class="md-nav__link">
+    <a href="../../use-cases/guides/" title="Invoking a RESTful Service" class="md-nav__link">
       Invoking a RESTful Service
     </a>
   </li>
@@ -1455,8 +1512,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../admin/user_management.md" title="User Management" class="md-nav__link">
-      User Management
+    <a href="../../administer-and-observe/observability/" title="Observability" class="md-nav__link">
+      Observability
     </a>
   </li>
 
@@ -1908,29 +1965,62 @@
     <ul class="md-nav__list" data-md-scrollfix>
         
         <li class="md-nav__item">
-  <a href="#download-and-install-the-product" title="Download and install the product" class="md-nav__link">
-    Download and install the product
+  <a href="#installing-the-wso2-micro-integrator" title="Installing the WSO2 Micro Integrator" class="md-nav__link">
+    Installing the WSO2 Micro Integrator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#accessing-the-home-directory" title="Accessing the HOME directory" class="md-nav__link">
+    Accessing the HOME directory
   </a>
   
 </li>
         
-        <li class="md-nav__item">
-  <a href="#access-the-home-directory" title="Access the HOME directory" class="md-nav__link">
-    Access the HOME directory
+          <li class="md-nav__item">
+  <a href="#uninstalling-the-product" title="Uninstalling the product" class="md-nav__link">
+    Uninstalling the product
   </a>
   
 </li>
         
-        <li class="md-nav__item">
-  <a href="#uninstall-the-product" title="Uninstall the product" class="md-nav__link">
-    Uninstall the product
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
         <li class="md-nav__item">
-  <a href="#whats-next" title="What's next?" class="md-nav__link">
-    What's next?
+  <a href="#running-the-micro-integrator" title="Running the Micro Integrator" class="md-nav__link">
+    Running the Micro Integrator
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-installer" title="Using the installer" class="md-nav__link">
+    Using the installer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-binary-distribution" title="Using the binary distribution" class="md-nav__link">
+    Using the binary distribution
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+        <li class="md-nav__item">
+  <a href="#stopping-the-micro-in-tegrator" title="Stopping the Micro In tegrator" class="md-nav__link">
+    Stopping the Micro In tegrator
   </a>
   
 </li>
@@ -1956,132 +2046,157 @@
                 
                 
                 <h1 id="installing-in-a-vm">Installing in a VM<a class="headerlink" href="#installing-in-a-vm" title="Permanent link">&para;</a></h1>
-<p>See the topics given below on how to install WSO2 Enterprise Integrator:</p>
-<h2 id="download-and-install-the-product">Download and install the product<a class="headerlink" href="#download-and-install-the-product" title="Permanent link">&para;</a></h2>
-<p>If the installation <a href="_Installation_Prerequisites_">prerequisites</a> are
-satisfied, follow the steps below:</p>
+<p>Follow the steps given below to install and run the Micro Integrator on
+a VM.</p>
+<h2 id="installing-the-wso2-micro-integrator">Installing the WSO2 Micro Integrator<a class="headerlink" href="#installing-the-wso2-micro-integrator" title="Permanent link">&para;</a></h2>
+<p>Follow the steps below:</p>
 <ol>
 <li>
-<p>Go to the WSO2 Integration <a href="https://wso2.com/integration">product page</a> and download the product.</p>
+<p>Go to the WSO2 Micro Integrator <a href="https://wso2.com/integration/micro-integrator/">product page</a> and download.</p>
 <blockquote>
-<p>Note that there are several options for installing the product in various environments. Use the available links for more information on each option.</p>
+<p>Note that there are several options for installing the product in
+    various environments. Use the available links for more information
+    on each option.</p>
 </blockquote>
 </li>
 <li>
-<p>If you downloaded the <strong>installer</strong> (.pkg file), double-click to
-    open the installation wizard, which will guide you through
-    the installation. When you finish, the product will be installed and
-    ready for use.</p>
-<blockquote>
-<p><strong>Want to install WSO2 EI as a service?</strong></p>
-<p>See the following topics in the WSO2 administration guide for instructions:
-    - <a href="https://docs.wso2.com/display/ADMIN44x/Installing+as+a+Windows+Service">Installing WSO2 Products as a Windows Service</a>
-    - <a href="https://docs.wso2.com/display/ADMIN44x/Installing+as+a+Linux+Service">Installing WSO2 Products as a Linux Service</a></p>
-</blockquote>
+<p>If you used the installer, double-click to open the installation
+    wizard, which will guide you through the installation. When you
+    finish, the product will be installed and ready for use.</p>
 </li>
 </ol>
-<h2 id="access-the-home-directory">Access the HOME directory<a class="headerlink" href="#access-the-home-directory" title="Permanent link">&para;</a></h2>
+<h3 id="accessing-the-home-directory">Accessing the HOME directory<a class="headerlink" href="#accessing-the-home-directory" title="Permanent link">&para;</a></h3>
 <p>Let's call the installation location of your product the
-<strong>\&lt;EI_HOME></strong> directory.</p>
-<p>If you installed the product using the <strong>installer</strong>, this is located in a place specific to your OS as shown below:</p>
+<strong>MI_HOME</strong> directory.</p>
+<p>If you used the <strong>installer</strong> to install the product, this is located in
+a place specific to your OS as shown below:</p>
 <table style="width:100%;">
-   <colgroup>
-      <col style="width: 9%" />
-      <col style="width: 90%" />
-   </colgroup>
-   <thead>
-      <tr class="header">
-         <th>OS</th>
-         <th>Home directory</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr class="odd">
-         <td>Mac OS</td>
-         <td><code>/Library/WSO2/EnterpriseIntegrator/6.5.0</code></td>
-      </tr>
-      <tr class="even">
-         <td>Windows</td>
-         <td><code>C:\Program Files\WSO2\EnterpriseIntegrator\6.5.0\</code></td>
-      </tr>
-      <tr class="odd">
-         <td>Ubuntu</td>
-         <td><code>/usr/lib/wso2/EnterpriseIntegrator/6.5.0</code></td>
-      </tr>
-      <tr class="even">
-         <td>CentOS</td>
-         <td><code>/usr/lib64/EnterpriseIntegrator/6.5.0</code></td>
-      </tr>
-   </tbody>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 90%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>OS</th>
+<th>Home directory</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mac OS</td>
+<td><code>              /Library/WSO2/MicroIntegrator/1.0.0             </code></td>
+</tr>
+<tr class="even">
+<td>Windows</td>
+<td><code>              C:\Program Files\WSO2\MicroIntegrator\1.0.0             </code></td>
+</tr>
+<tr class="odd">
+<td>Ubuntu</td>
+<td><code>              /usr/lib/wso2/MicroIntegrator/1.0.0             </code></td>
+</tr>
+<tr class="even">
+<td>CentOS</td>
+<td><code>              /usr/lib64/MicroIntegrator/1.0.0             </code></td>
+</tr>
+</tbody>
 </table>
 
-<h2 id="uninstall-the-product">Uninstall the product<a class="headerlink" href="#uninstall-the-product" title="Permanent link">&para;</a></h2>
-<p>If you installed the product using the <strong>installer</strong>, you can uninstall it by following the instructions:</p>
+<h3 id="uninstalling-the-product">Uninstalling the product<a class="headerlink" href="#uninstalling-the-product" title="Permanent link">&para;</a></h3>
+<p>If you used the <strong>installer</strong> to install the product, you can uninstall
+by following the steps given below:</p>
 <table>
-   <thead>
-      <tr class="header">
-         <th>OS</th>
-         <th>Instructions</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr class="odd">
-         <td>Mac OS</td>
-         <td>
-            <div class="content-wrapper">
-               <p>Open a terminal and run the following command as the root user:</p>
-               <div class="code panel pdl" style="border-width: 1px;">
-                  <div class="codeContent panelContent pdl">
-                     <div class="sourceCode" id="cb1" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
-                        <pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a>sudo bash /Library/WSO2/EnterpriseIntegrator/<span class="fl">6.5.</span><span class="dv">0</span>/uninstall.<span class="fu">sh</span></span></code></pre>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </td>
-      </tr>
-      <tr class="even">
-         <td>Windows</td>
-         <td>Go to the <strong>Start Menu -&gt; Programs -&gt; WSO2 -&gt; Uninstall Enterprise Integrator 6.5.0</strong> or search <strong>Uninstall Enterprise Integrator 6.5.0</strong> and click the shortcut icon. This will uninstall the product from your computer.</td>
-      </tr>
-      <tr class="odd">
-         <td>Ubuntu</td>
-         <td>
-            <div class="content-wrapper">
-               <p>Open a terminal and run the following command:</p>
-               <div class="code panel pdl" style="border-width: 1px;">
-                  <div class="codeContent panelContent pdl">
-                     <div class="sourceCode" id="cb2" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
-                        <pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a>sudo apt-get purge wso2ei-<span class="fl">6.5.</span><span class="dv">0</span></span></code></pre>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </td>
-      </tr>
-      <tr class="even">
-         <td>CentOS</td>
-         <td>
-            <div class="content-wrapper">
-               <p>Open a terminal and run the following command:</p>
-               <div class="code panel pdl" style="border-width: 1px;">
-                  <div class="codeContent panelContent pdl">
-                     <div class="sourceCode" id="cb3" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence">
-                        <pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1"></a>sudo yum remove wso2ei-<span class="fl">6.5.</span><span class="dv">0</span>-x86_<span class="dv">64</span></span></code></pre>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </td>
-      </tr>
-   </tbody>
+<thead>
+<tr class="header">
+<th>OS</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mac OS</td>
+<td><div class="content-wrapper">
+<p>Open a terminal and run the following command as the root user:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<div class="sourceCode" id="cb1" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1"></a>sudo bash /Library/WSO2/MicroIntegrator/<span class="fl">1.0.</span><span class="dv">0</span>/uninstall.<span class="fu">sh</span></span></code></pre></div>
+</div>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>Windows</td>
+<td>Go to the <strong>Start Menu -&gt; Programs -&gt; WSO2 -&gt; Uninstall Micro Integrator 1.0.0</strong> or search <strong>Uninstall Micro Integrator 1.0.0</strong> and click the shortcut icon. This will uninstall the product from your computer.</td>
+</tr>
+<tr class="odd">
+<td>Ubuntu</td>
+<td><div class="content-wrapper">
+<p>Open a terminal and run the following command:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<div class="sourceCode" id="cb2" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1"></a>sudo apt-get purge wso2mi-<span class="fl">1.0.</span><span class="dv">0</span></span></code></pre></div>
+</div>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>CentOS</td>
+<td><div class="content-wrapper">
+<p>Open a terminal and run the following command:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<div class="sourceCode" id="cb3" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: java; gutter: false; theme: Confluence"><pre class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1"></a>sudo yum remove wso2ei-<span class="fl">1.0.</span><span class="dv">0</span>-x86_<span class="dv">64</span></span></code></pre></div>
+</div>
+</div>
+</div></td>
+</tr>
+</tbody>
 </table>
 
-<h2 id="whats-next">What's next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<h2 id="running-the-micro-integrator">Running the Micro Integrator<a class="headerlink" href="#running-the-micro-integrator" title="Permanent link">&para;</a></h2>
+<p>Start the WSO2 Micro Integrator by following the instructions given
+below.</p>
+<h3 id="using-the-installer">Using the installer<a class="headerlink" href="#using-the-installer" title="Permanent link">&para;</a></h3>
 <ul>
-<li>See the instructions for <a href="_Running_the_Product_">running the
-    product</a> .</li>
+<li>On <strong>MacOS/Linux/CentOS</strong>, open a terminal and execute the command given below.
+  <pre class="codehilite"><code class="language-java linenums">sudo wso2mi-1.0.0</code></pre>
+  The operation log keeps running until the profile starts, which usually
+       takes several seconds. Wait until the profile fully boots up and
+       displays a message similar to " <em>WSO2 Carbon started in n seconds.</em> "</li>
+<li>On <strong>Windows</strong>, go to <strong>Start Menu -> Programs -> WSO2 -> Micro Integrator.</strong> This
+will open a terminal and start the relevant profile.</li>
 </ul>
+<h3 id="using-the-binary-distribution">Using the binary distribution<a class="headerlink" href="#using-the-binary-distribution" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Before you execute the product startup script, be sure to set the
+    JAVA HOME in your machine. Use a <a href="https://docs.wso2.com/display/compatibility/Tested+Operating+Systems+and+JDKs">JDK that is compatible with WSO2
+    Micro
+    Integrator</a>
+    .</li>
+<li>Open a terminal and navigate to the
+    <code class="codehilite">&lt;MI_HOME&gt;/bin/</code> directory, where
+    <code class="codehilite">&lt;MI_HOME&gt;</code> is the home directory of your product
+    distribution.</li>
+<li>
+<p>Execute the relevant command.</p>
+<ul>
+<li>On <strong>MacOS/Linux/CentOS</strong>
+  <pre class="codehilite"><code class="language-java linenums">sh micro-integrator.sh</code></pre>
+      If you have <strong>installed the product using the installer</strong>
+      , and you want to manually run the product startup script from the
+      /bin directory, you need to use the 'sudo
+      launcher_micro-integrator' command. This script automatically
+      assigns the JAVA HOME of your VM to the root user of your Micro
+      Integrator instance.</li>
+<li>On <strong>Windows</strong>
+  <pre class="codehilite"><code class="language-java linenums">micro-integrator.bat</code></pre></li>
+</ul>
+</li>
+</ol>
+<p>By default, the HTTP listener port is 8290 and the default HTTPS
+listener port is 8253.</p>
+<h2 id="stopping-the-micro-in-tegrator">Stopping the Micro In tegrator<a class="headerlink" href="#stopping-the-micro-in-tegrator" title="Permanent link">&para;</a></h2>
+<p>To stop the Micro Integrator runtime, press Ctrl+C in the command
+window.</p>
                 
                   
                 
@@ -2104,7 +2219,7 @@ satisfied, follow the steps below:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../quick-start-guide/quick-start-guide/" title="Quick Start Guide" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../concepts/concepts/" title="Concepts" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2113,7 +2228,7 @@ satisfied, follow the steps below:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Quick Start Guide
+                Concepts
               </span>
             </div>
           </a>

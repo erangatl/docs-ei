@@ -26,8 +26,8 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/concepts/concepts/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -151,47 +151,47 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/creating_keystores/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/importing_ssl_certificate/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/renewing_ca_signed_certificate_in_keystore/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/configuring_keystores/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/single_key_encryption/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/encrypting_plain_text/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/mitigating_csrf/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/setup/security/mitigating_css/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wso2.com/integration/setup/tuning_db_performance/</loc>
+     <loc>https://wso2.com/integration/setup/tuning_jvm_performance/</loc>
      <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -211,8 +211,33 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/develop/designing-an-integration-usecase/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/develop/testing/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/develop/cicd/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/develop/wSO2-Integration-Studio/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/develop/working-with-WSO2-Integration-Studio/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/use-cases/guides/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -221,23 +246,8 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
+     <loc>https://wso2.com/integration/administer-and-observe/observability/</loc>
+     <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
