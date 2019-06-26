@@ -1,0 +1,2604 @@
+<!--
+ * Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ * WSO2 Inc. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation for WSO2 Enterprise Integrator">
+      
+      
+        <link rel="canonical" href="https://wso2.com/integration/references/dB-Report-Mediator/">
+      
+      
+        <meta name="author" content="WSO2">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>DB Report Mediator - WSO2 Enterprise Integrator Documentation</title>
+      
+    
+    
+  
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ff7043">
+      
+    
+  <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/lib/highlightjs/default.min.css">
+    
+      <link rel="stylesheet" href="../../assets/css/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#db-report-mediator" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <!--
+ * Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ * WSO2 Inc. licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except
+ * in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+-->
+
+<header class="md-header" data-md-component="header" id="page-header" data-url="" data-lang="en">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://wso2.com/integration/" title="WSO2 Enterprise Integrator Documentation" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+               Enterprise Integrator Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              DB Report Mediator
+            </span>
+          
+        </div>
+        <div class="md-flex__ellipsis md-header__version-select">
+            <div class="mb-tabs__dropdown version-select">
+                <a class="md-tabs__link md-tabs__dropdown-link" href="#!" data-target="version-select-dropdown">7.0.0</a>
+                <ul id="version-select-dropdown" class="mb-tabs__dropdown-content" tabindex="0">
+                    <!-- Versions will added here dynamically -->
+                    <li class="md-tabs__item mb-tabs__dropdown">
+                        <a href="#" id="show-all-versions-link">Show all</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item home_icon">
+    
+      <a href="../.." title="Home" class="md-tabs__link md-tabs__link--active">
+          <i class="fa fa-home"></i>
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../overview/introduction/" title="Introduction" class="md-tabs__link">
+          Introduction
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../quick-start-guide/quick-start-guide/" title="Quick Start Guide" class="md-tabs__link">
+          Quick Start Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../concepts.md" title="Concepts" class="md-tabs__link">
+          Concepts
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../setup/install_in_vm/" title="Setup and Install" class="md-tabs__link">
+          Setup and Install
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../develop/design.md" title="Developer Experience" class="md-tabs__link">
+          Developer Experience
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../samples/invoking_restful_service.md" title="Use Cases" class="md-tabs__link">
+          Use Cases
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../admin/user_management.md" title="Administration and Observability" class="md-tabs__link">
+          Administration and Observability
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../ei_config_catalog/" title="References" class="md-tabs__link">
+          References
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+    <div class="quick_links">
+        
+        <a href="https://github.com/wso2/docs-ei/edit/master/en/docs/references/dB-Report-Mediator.md" target="blank" id="editIcon" title="Edit this page"
+           title="Edit this page" class="md-icon md-content__icon nav_link edit_link"></a>
+        
+    </div>
+    <a href="#" title="Report Issues" class="feedbackBtn" 
+        onclick=window.open("https://github.com/"+"wso2/docs-ei"+"/issues/new?title=Doc%20Feedback:&body=Location%20:%20"+window.location.href); >
+        Report Issues</a>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+    <label class="md-nav__title md-nav__title--site" for="__drawer">
+      <a href="https://wso2.com/integration/" title="WSO2 Enterprise Integrator Documentation"
+         class="md-nav__button md-logo">
+        
+          <img src="../../images/logo.svg" width="48" height="48">
+        
+      </a>
+      WSO2 Enterprise Integrator Documentation
+    </label>
+    
+      <div class="md-nav__source">
+        
+
+
+  
+
+<a href="https://github.com/wso2/docs-ei/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    wso2/docs-ei
+  </div>
+</a>
+      </div>
+    
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        
+        
+        
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Introduction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Introduction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../overview/introduction/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../overview/architecture/" title="Architecture" class="md-nav__link">
+      Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../overview/about-this-release/" title="About this Release" class="md-nav__link">
+      About this Release
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Quick Start Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Quick Start Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../quick-start-guide/quick-start-guide/" title="Quick Start Guide" class="md-nav__link">
+      Quick Start Guide
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Concepts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Concepts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../concepts.md" title="Concepts" class="md-nav__link">
+      Concepts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Setup and Install
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Setup and Install
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      Installation Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        Installation Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/install_in_vm/" title="Install in a VM" class="md-nav__link">
+      Install in a VM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/install_in_docker/" title="Install in Docker" class="md-nav__link">
+      Install in Docker
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/install_in_kubernetes/" title="Install in Kubernetes" class="md-nav__link">
+      Install in Kubernetes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2">
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Product Deployment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Product Deployment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/deploying_wso2_ei/" title="Deploying WSO2 Enterprise Integrator" class="md-nav__link">
+      Deploying WSO2 Enterprise Integrator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/upgrading/" title="Upgrading from a Previous Release" class="md-nav__link">
+      Upgrading from a Previous Release
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/troubleshooting_deployment/" title="Troubleshooting Production Deployment" class="md-nav__link">
+      Troubleshooting Production Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4" type="checkbox" id="nav-5-2-4">
+    
+    <label class="md-nav__link" for="nav-5-2-4">
+      Supporting Configurations
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-4">
+        Supporting Configurations
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/registry_mounting/" title="Optional: Mounting a Registry" class="md-nav__link">
+      Optional: Mounting a Registry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/setting_up_lb/" title="Setting up a Load Balancer" class="md-nav__link">
+      Setting up a Load Balancer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/deployment_synchronization/" title="Configuring Deployment Synchronization" class="md-nav__link">
+      Configuring Deployment Synchronization
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-4" type="checkbox" id="nav-5-2-4-4">
+    
+    <label class="md-nav__link" for="nav-5-2-4-4">
+      Setting up Databases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-2-4-4">
+        Setting up Databases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-MySQL/" title="Setting up MySQL" class="md-nav__link">
+      Setting up MySQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-MSSQL/" title="Setting up MSSQL" class="md-nav__link">
+      Setting up MSSQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-Oracle/" title="Setting up Oracle" class="md-nav__link">
+      Setting up Oracle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-Oracle-RAC/" title="Setting up Oracle RAC" class="md-nav__link">
+      Setting up Oracle RAC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-IBM-Informix/" title="Setting up IBM Informix" class="md-nav__link">
+      Setting up IBM Informix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-IBM-DB2/" title="Setting up IBM DB2" class="md-nav__link">
+      Setting up IBM DB2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-MariaDB/" title="Setting up Maria DB" class="md-nav__link">
+      Setting up Maria DB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-Embedded-Derby/" title="Setting up Embedded Derby" class="md-nav__link">
+      Setting up Embedded Derby
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-Remote-Derby/" title="Setting up Remote Derby" class="md-nav__link">
+      Setting up Remote Derby
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-PostgreSQL/" title="Setting up PostgreSQL" class="md-nav__link">
+      Setting up PostgreSQL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/db/setting-up-Remote-H2/" title="Setting up Remote H2" class="md-nav__link">
+      Setting up Remote H2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-4-5" type="checkbox" id="nav-5-2-4-5">
+    
+    <label class="md-nav__link" for="nav-5-2-4-5">
+      Setting up a User Store
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-2-4-5">
+        Setting up a User Store
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/setting_up_jdbc_userstore/" title="Setting up a JDBC User Store" class="md-nav__link">
+      Setting up a JDBC User Store
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/setting_up_ro_ldap/" title="Setting up a Read-Only LDAP" class="md-nav__link">
+      Setting up a Read-Only LDAP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/setting_up_rw_ldap/" title="Setting up a Read-Write LDAP" class="md-nav__link">
+      Setting up a Read-Write LDAP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/setting_up_rw_ad/" title="Setting up a Read-Write Active Directory" class="md-nav__link">
+      Setting up a Read-Write Active Directory
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-5" type="checkbox" id="nav-5-2-5">
+    
+    <label class="md-nav__link" for="nav-5-2-5">
+      Security Hardening
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-5">
+        Security Hardening
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-5-1" type="checkbox" id="nav-5-2-5-1">
+    
+    <label class="md-nav__link" for="nav-5-2-5-1">
+      Setting up Keystores
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-5-2-5-1">
+        Setting up Keystores
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/creating_keystores.md" title="Creating New Keystores" class="md-nav__link">
+      Creating New Keystores
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/importing_ssl_certificate.md" title="Adding SSL certificates to keystores" class="md-nav__link">
+      Adding SSL certificates to keystores
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/renewing_ca_signed_certificate_in_keystore.md" title="Renewing a CA-signed Certificate" class="md-nav__link">
+      Renewing a CA-signed Certificate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/configuring_keystores.md" title="Configuring Keystores" class="md-nav__link">
+      Configuring Keystores
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/single_key_encryption.md" title="Using Symmetric Encryption" class="md-nav__link">
+      Using Symmetric Encryption
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/encrypting_plain_text.md" title="Encrypting Plain Text" class="md-nav__link">
+      Encrypting Plain Text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/mitigating_csrf.md" title="Mitigating Cross Site Request Forgery Attacks" class="md-nav__link">
+      Mitigating Cross Site Request Forgery Attacks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/security/mitigating_css.md" title="Mitigating Cross Site Scripting" class="md-nav__link">
+      Mitigating Cross Site Scripting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-6" type="checkbox" id="nav-5-2-6">
+    
+    <label class="md-nav__link" for="nav-5-2-6">
+      Performance Tuning
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-6">
+        Performance Tuning
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/tuning_db_performance/" title="Tuning Database Performance" class="md-nav__link">
+      Tuning Database Performance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/network_os_performance/" title="Tuning Network and OS Performance" class="md-nav__link">
+      Tuning Network and OS Performance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/backup_recovery/" title="Backup and Recovery" class="md-nav__link">
+      Backup and Recovery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../setup/deployment_checklist/" title="Product Deployment Checklist" class="md-nav__link">
+      Product Deployment Checklist
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developer Experience
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developer Experience
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../develop/design.md" title="Designing an Integration Use Case" class="md-nav__link">
+      Designing an Integration Use Case
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../develop/testing.md" title="Testing an Integration Use Case" class="md-nav__link">
+      Testing an Integration Use Case
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../develop/cicd.md" title="Continuous Development and Deployment" class="md-nav__link">
+      Continuous Development and Deployment
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Use Cases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Use Cases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Samples
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        Samples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samples/invoking_restful_service.md" title="Invoking a RESTful Service" class="md-nav__link">
+      Invoking a RESTful Service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../guides/message_routing.md" title="Message Routing" class="md-nav__link">
+      Message Routing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Administration and Observability
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Administration and Observability
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../admin/user_management.md" title="User Management" class="md-nav__link">
+      User Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      References
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        References
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ei_config_catalog/" title="Configuration Catalog" class="md-nav__link">
+      Configuration Catalog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2" type="checkbox" id="nav-9-2">
+    
+    <label class="md-nav__link" for="nav-9-2">
+      Mediator Catalog
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-9-2">
+        Mediator Catalog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../mediator_catalog.md" title="Mediator Catlog" class="md-nav__link">
+      Mediator Catlog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../working-with-Mediators-via-Tooling/" title="Working with Mediators via Tooling" class="md-nav__link">
+      Working with Mediators via Tooling
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9-2-3" type="checkbox" id="nav-9-2-3">
+    
+    <label class="md-nav__link" for="nav-9-2-3">
+      ESB Mediators
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-9-2-3">
+        ESB Mediators
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="ESB Mediators" class="md-nav__link">
+      ESB Mediators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Aggregate Mediators" class="md-nav__link">
+      Aggregate Mediators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Bean Mediator" class="md-nav__link">
+      Bean Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Builder Mediator" class="md-nav__link">
+      Builder Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Cache Mediator" class="md-nav__link">
+      Cache Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Call Mediator" class="md-nav__link">
+      Call Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Call Template Mediator" class="md-nav__link">
+      Call Template Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Callout Mediator" class="md-nav__link">
+      Callout Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Class Mediator" class="md-nav__link">
+      Class Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Conditional Router Mediator" class="md-nav__link">
+      Conditional Router Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Data Mapper Mediator" class="md-nav__link">
+      Data Mapper Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eSB-Mediators/" title="Clone Mediator" class="md-nav__link">
+      Clone Mediator
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../property_catalog.md" title="Property Catalog" class="md-nav__link">
+      Property Catalog
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+      
+        
+        
+        
+
+
+  <li class="md-nav__item">
+    <a href="../../page-not-found.md" title="" class="md-nav__link">
+      
+    </a>
+  </li>
+
+      
+    </ul>
+  </nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+    
+    
+    
+    
+    
+    <a href="#" title="On this page" class="nav_link md-icon md-content__icon toc_icon" id="tocToggleBtn">toc</a>
+    <label class="md-nav__title" for="__toc">On this page</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+        
+        <li class="md-nav__item">
+  <a href="#syntax" title="Syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+        
+        <li class="md-nav__item">
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-properties-to-the-db-report-mediator" title="Adding properties to the DB Report mediator" class="md-nav__link">
+    Adding properties to the DB Report mediator
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-properties-to-the-db-report-mediator_1" title="Adding properties to the DB Report mediator" class="md-nav__link">
+    Adding properties to the DB Report mediator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+        <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-database-write-operation" title="Simple database write operation" class="md-nav__link">
+    Simple database write operation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performing-a-database-write-operation-within-a-transaction" title="Performing a database write operation within a transaction" class="md-nav__link">
+    Performing a database write operation within a transaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samples" title="Samples" class="md-nav__link">
+    Samples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+        
+        
+        
+        
+    </ul>
+    
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+                  <a href="https://github.com/wso2/docs-ei/edit/master/en/docs/references/dB-Report-Mediator.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="db-report-mediator">DB Report Mediator<a class="headerlink" href="#db-report-mediator" title="Permanent link">&para;</a></h1>
+<p>The <strong>DB Report Mediator</strong> is similar to the <a href="_DBLookup_Mediator_">DBLookup
+Mediator</a> . The difference between the two
+mediators is that the DB Report mediator writes information to a
+database using the specified insert SQL statement.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>The DB Report mediator is a
+<a href="ESB-Mediators_119131045.html#ESBMediators-Content-awareness">content-aware</a>
+mediator.</p>
+<hr />
+<p><a href="#DBReportMediator-Syntax">Syntax</a> |
+<a href="#DBReportMediator-Configuration">Configuration</a> |
+<a href="#DBReportMediator-Examples">Examples</a></p>
+<hr />
+<h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
+<p>The syntax of the DB Report mediator changes depending on whether you
+connect to the database using a connection pool, or using a data source.
+Click on the relevant tab to view the required syntax.</p>
+<ul>
+<li><a href="#f6c5661f175041249b8a8f490f1dda62"><strong>Connection Pool</strong></a></li>
+<li><a href="#83a79d7208aa49cabe1b83f074a5edfa"><strong>Data source</strong></a></li>
+</ul>
+<pre class="codehilite"><code class="language-java linenums">    &lt;dbreport&gt;
+       &lt;connection&gt;
+         &lt;pool&gt;
+          (
+            &lt;driver/&gt;
+            &lt;url/&gt;
+            &lt;user/&gt;
+            &lt;password/&gt;
+
+            &lt;dsName/&gt;
+            &lt;icClass/&gt;
+            &lt;url/&gt;
+            &lt;user/&gt;
+            &lt;password/&gt;
+          )
+            &lt;property name="name" value="value"/&gt;*
+         &lt;/pool&gt;
+       &lt;/connection&gt;
+       &lt;statement&gt;
+           &lt;sql&gt;insert into something values(?, ?, ?, ?)&lt;/sql&gt;
+          &lt;parameter [value="" | expression=""] type="CHAR|VARCHAR|LONGVARCHAR|NUMERIC|DECIMAL|BIT|TINYINT|SMALLINT|INTEGER|BIGINT|REAL|FLOAT|DOUBLE|DATE|TIME|TIMESTAMP"/&gt;*
+       &lt;/statement&gt;+
+    &lt;/dbreport&gt;</code></pre>
+
+<p>The syntax of the DBLookup mediator further differs based on whether the
+connection to the database is made using an external datasource or a
+Carbon datasource. Click on the relevant tab to view the required
+syntax.</p>
+<ul>
+<li><a href="#b8df92b7e65c4405b12a6d0248009db7"><strong>External Datasource</strong></a></li>
+<li><a href="#1b84426af66d45db9ee2b98bdac504b9"><strong>Carbon Datasource</strong></a></li>
+</ul>
+<pre class="codehilite"><code class="language-java linenums">    &lt;dbreport&gt;
+       &lt;connection&gt;
+          &lt;pool&gt;
+            &lt;dsName/&gt;
+            &lt;icClass/&gt;
+            &lt;url/&gt;
+            &lt;user/&gt;
+            &lt;password/&gt;
+            &lt;property name="name" value="value"/&gt;*
+          &lt;/pool&gt;
+       &lt;/connection&gt;
+       &lt;statement&gt;
+          &lt;sql&gt;select something from table where something_else = ?&lt;/sql&gt;
+          &lt;parameter [value="" | expression=""] type="CHAR|VARCHAR|LONGVARCHAR|NUMERIC|DECIMAL|BIT|TINYINT|SMALLINT|INTEGER|BIGINT|REAL|FLOAT|DOUBLE|DATE|TIME|TIMESTAMP"/&gt;*
+       &lt;/statement&gt;+
+    &lt;/dbreport&gt;</code></pre>
+
+<pre class="codehilite"><code class="language-java linenums">    &lt;dbreport&gt;
+       &lt;connection&gt;
+          &lt;pool&gt;
+            &lt;dsName/&gt;
+          &lt;/pool&gt;
+       &lt;/connection&gt;
+       &lt;statement&gt;
+          &lt;sql&gt;select something from table where something_else = ?&lt;/sql&gt;
+          &lt;parameter [value="" | expression=""] type="CHAR|VARCHAR|LONGVARCHAR|NUMERIC|DECIMAL|BIT|TINYINT|SMALLINT|INTEGER|BIGINT|REAL|FLOAT|DOUBLE|DATE|TIME|TIMESTAMP"/&gt;*
+       &lt;/statement&gt;+
+    &lt;/dbreport&gt;</code></pre>
+
+<hr />
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
+<p>The configuration of the DBQuery mediator changes depending on whether
+you connect to the database using a connection pool, or using a data
+source. Click on the relevant tab to view the required UI.</p>
+<ul>
+<li><a href="#63d61313919a470ba470c7558864896b"><strong>Pool</strong></a></li>
+<li><a href="#8afd6c544e344231be649b5edaab0b67"><strong>Data Source</strong></a></li>
+</ul>
+<p>The following UI is displayed when you select the <strong>Pool</strong> option for
+the <strong>Connection Information</strong> parameter, indicating that you want the
+connection to be made via a connection pool.</p>
+<p>The parameters available to configure the DB Report mediator are as
+follows.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>When specifying the DB connection using a connection pool, other than
+specifying parameter values inline, you can also specify following
+parameter values of the connection information (i.e. Driver, URL, User
+and password) as registry entries. The advantage of specifying a
+parameter value as a registry entry is that the same connection
+information configurations can be used in different environments simply
+by changing the registry entry value. To do this, give the registry path
+within the <code class="codehilite">key</code> attribute as shown in the
+example below.</p>
+<pre class="codehilite"><code class="language-xml linenums">    &lt;dblookup xmlns="http://ws.apache.org/ns/synapse"&gt;
+    &lt;connection&gt;
+        &lt;pool&gt;
+            &lt;password key="conf:/repository/esb/password"/&gt;
+            &lt;driver key="conf:/repository/esb/driver"/&gt;
+            &lt;url key="conf:/repository/esb/url"/&gt;
+            &lt;user key="conf:/repository/esb/username"/&gt;
+        &lt;/pool&gt;
+    &lt;/connection&gt;
+    &lt;/dblookup&gt;</code></pre>
+
+<pre class="codehilite"><code class="linenums">If you need to provide the registry entry value via the Management
+Console, specify the registry path using the
+`            $registry           ` prefix.</code></pre>
+
+
+<table>
+<thead>
+<tr class="header">
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Use Transaction</strong></td>
+<td><div class="content-wrapper">
+<p>This parameter specifies whether the database operation should be performed within a transaction or not. Click <strong>Yes</strong> or <strong>No</strong> as relevant.</p>
+!!! info
+<p>To include multiple database reports within the same database transaction i nside a particular message flow, set the value of this <strong>Use Transaction</strong> property to <strong>Yes</strong> .<br />
+</p>
+<p>However, when you have more reports it takes more time to complete a transaction and when multiple messages flow in, then multiple transactions can become active at the same time.</p>
+<p>By default, the maximum number of active transactions is 50 as imposed by the Atomikos JTA implementation . To override this, create a file named <code>                  transaction.properties                 </code> by including the following property and add it to the <code>                  &lt;EI_HOME&gt;/lib                 </code> directory:</p>
+<pre><code>com.atomikos.icatch.max_actives=1000</code></pre>
+<div>
+Specifying the value as -1 allows unlimited transactions. Change the value accordingly to limit the number of active transactions based on your environment and the concurrency level of the service.
+</div>
+!!! note
+<p>If you click <strong>Yes</strong> to perform the database operation within a transaction, you need to ensure the following:</p>
+<ul>
+<li>The DBReport mediator configuration must be preceded by a Transaction Mediator configuration with <code>                   new                  </code> as the transaction action.</li>
+<li>The DBReport mediator configuration must be followed by a Transaction Mediator configuration with <code>                   commit                  </code> as the transaction action.</li>
+</ul>
+<p>For detailed information about configuring Transaction mediators, see <a href="_Transaction_Mediator_">Transaction Mediator</a> .</p>
+
+</div></td>
+</tr>
+<tr class="even">
+<td><strong>Driver</strong></td>
+<td>The class name of the database driver.</td>
+</tr>
+<tr class="odd">
+<td><strong>Url</strong></td>
+<td><p>The JDBC URL of the database that data will be written to.</p>
+<p>Set the <code>                 autoReconnect                </code> parameter to <code>                 true                </code> to help reconnect to the database when the connection between the client and the database is dropped. For example, <code>                 &lt;url&gt;jdbc:mysql://&lt;ip&gt;:&lt;port&gt;/test?autoReconnect=true&lt;/url&gt;                </code> .</p></td>
+</tr>
+<tr class="even">
+<td><strong>User</strong></td>
+<td>The user name used to connect to the database.</td>
+</tr>
+<tr class="odd">
+<td><strong>Password</strong></td>
+<td>The password used to connect to the database.</td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="adding-properties-to-the-db-report-mediator">Adding properties to the DB Report mediator<a class="headerlink" href="#adding-properties-to-the-db-report-mediator" title="Permanent link">&para;</a></h5>
+<p>If you click <strong>Add Property</strong> , the page will expand to display the
+following parameters.</p>
+<p>The parameters available to manage properties are as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>The name of the property.</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td>The value of the property.</td>
+</tr>
+<tr>
+<td><strong>Action</strong></td>
+<td>This parameter enables a property to be deleted.</td>
+</tr>
+</tbody>
+</table>
+<p>The available properties are as follows.</p>
+<table>
+<thead>
+<tr class="header">
+<th><p>Name</p></th>
+<th><p>Value</p></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>autocommit</p></td>
+<td><p>true / false</p></td>
+<td>The auto-commit state of the connections created by the pool.</td>
+</tr>
+<tr class="even">
+<td><p>isolation</p></td>
+<td><p>Connection.TRANSACTION_NONE / Connection.TRANSACTION_READ_COMMITTED / Connection.TRANSACTION_READ_UNCOMMITTED / Connection.TRANSACTION_REPEATABLE_READ / Connection.TRANSACTION_SERIALIZABLE</p></td>
+<td>The isolation state of the connections created by the pool.</td>
+</tr>
+<tr class="odd">
+<td><p>initialsize</p></td>
+<td><p>int</p></td>
+<td>The initial number of connections created when the pool is started.</td>
+</tr>
+<tr class="even">
+<td><p>maxactive</p></td>
+<td><p>int</p></td>
+<td>The maximum number of active connections that can be allocated from this pool at a given time. When this maximum limit is reached, no more active connections will be created by the connection pool. Specify 0 or a negative value if you do not want to set a limit.</td>
+</tr>
+<tr class="odd">
+<td><p>maxidle</p></td>
+<td><p>int</p></td>
+<td>The maximum number of idle connections to be allowed in the connection pool at a given time. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr class="even">
+<td><p>maxopenstatements</p></td>
+<td><p>int</p></td>
+<td>The maximum number of open statements that can be allocated from the statement pool at a given time. When this maximum limit is reached, no more new statements will be created by the statement pool. Specify 0 or a negative value if you do not want to set a limit.</td>
+</tr>
+<tr class="odd">
+<td><p>maxwait</p></td>
+<td><p>long</p></td>
+<td>The maximum number of milliseconds that the connection pool will wait for a connection to return before throwing an exception when there are no connections available in the pool. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr class="even">
+<td><p>minidle</p></td>
+<td><p>int</p></td>
+<td>The minimum number of idle connections to be allowed in the connection pool at a given time. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr class="odd">
+<td><p>poolstatements</p></td>
+<td><p>true/ false</p></td>
+<td>If the value is <code>                true               </code> , statement pooling is enabled for the pool.</td>
+</tr>
+<tr class="even">
+<td><p>testonborrow</p></td>
+<td><p>true/ false</p></td>
+<td>If the value is <code>                true               </code> , objects are validated before they are borrowed from the pool. An object which fails the validation test will be dropped from the pool and another object in the pool will be picked instead.</td>
+</tr>
+<tr class="odd">
+<td><p>testwhileidle</p></td>
+<td><p>true/ false</p></td>
+<td>If the value is <code>                true               </code> , the objects in the pool will be validated using an idle object evictor (if any exists). Any object which fails this validation test would be dropped from the pool.</td>
+</tr>
+<tr class="even">
+<td><p>validationquery</p></td>
+<td><p>String</p></td>
+<td><p>The SQL query that will be used to validate connections from this pool before returning them to the caller.</p>
+<p>This property helps to reconnect to the database when the database connection between the client and the database is dropped. For example, <code>                 &lt;property name="validationquery" value="select 1"/&gt;                </code> .</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>The UI configuration of the DBLookup mediator further differs based on
+whether the connection to the database is made using an external
+datasource or a Carbon datasource. Click on the relevant tab to view the
+required UI configuration.</p>
+<ul>
+<li><a href="#1de61418b7854e0fb441f299f1d89b35"><strong>External</strong></a></li>
+<li><a href="#0d98fd1622154d9a888233f7c7d55583"><strong>Carbon Datasource</strong></a></li>
+</ul>
+<p>The following UI is displayed if you select the <strong>External</strong> option for
+the <strong>Datasource Type</strong> parameter, indicating that you want the
+connection to the database to be made using an external datasource.</p>
+<p>The parameters available to configure the DB Report mediator are as
+follows.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Use Transaction</strong></td>
+<td>This parameter specifies whether the database operation should be performed within a transaction or not. Click <strong>Yes</strong> or <strong>No</strong> as relevant.</td>
+</tr>
+<tr>
+<td><strong>Initial Context</strong></td>
+<td>The initial context factory class. The corresponding <code class="codehilite">Java</code> environment property is <code class="codehilite">java.naming.factory.initial</code> .</td>
+</tr>
+<tr>
+<td><strong>Datasource Name</strong></td>
+<td>The naming service provider URL . The corresponding <code class="codehilite">Java</code> environment property is <code class="codehilite">java.naming.provider.url</code> .</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td>The JDBC URL of the database that data will be written to.</td>
+</tr>
+<tr>
+<td><strong>User</strong></td>
+<td>The user name used to connect to the database.</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>The password used to connect to the database.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="adding-properties-to-the-db-report-mediator_1">Adding properties to the DB Report mediator<a class="headerlink" href="#adding-properties-to-the-db-report-mediator_1" title="Permanent link">&para;</a></h5>
+<p>If you click <strong>Add Property</strong> , the page will expand to display the
+following parameters.</p>
+<p>The parameters available to manage properties are as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>The name of the property.</td>
+</tr>
+<tr>
+<td><strong>Value</strong></td>
+<td>The value of the property.</td>
+</tr>
+<tr>
+<td><strong>Action</strong></td>
+<td>This parameter enables a property to be deleted.</td>
+</tr>
+</tbody>
+</table>
+<p>The available properties are as follows.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autocommit</td>
+<td>true / false</td>
+<td>The auto-commit state of the connections created by the pool.</td>
+</tr>
+<tr>
+<td>isolation</td>
+<td>Connection.TRANSACTION_NONE / Connection.TRANSACTION_READ_COMMITTED / Connection.TRANSACTION_READ_UNCOMMITTED / Connection.TRANSACTION_REPEATABLE_READ / Connection.TRANSACTION_SERIALIZABLE</td>
+<td>The isolation state of the connections created by the pool.</td>
+</tr>
+<tr>
+<td>initialsize</td>
+<td>int</td>
+<td>The initial number of connections created when the pool is started.</td>
+</tr>
+<tr>
+<td>maxactive</td>
+<td>int</td>
+<td>The maximum number of active connections that can be allocated from this pool at a given time. When this maximum limit is reached, no more active connections will be created by the connection pool. Specify 0 or a negative value if you do not want to set a limit.</td>
+</tr>
+<tr>
+<td>maxidle</td>
+<td>int</td>
+<td>The maximum number of idle connections to be allowed in the connection pool at a given time. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr>
+<td>maxopenstatements</td>
+<td>int</td>
+<td>The maximum number of open statements that can be allocated from the statement pool at a given time. When this maximum limit is reached, no more new statements will be created by the statement pool. Specify 0 or a negative value if you do not want to set a limit.</td>
+</tr>
+<tr>
+<td>maxwait</td>
+<td>long</td>
+<td>The maximum number of milliseconds that the connection pool will wait for a connection to return before throwing an exception when there are no connections available in the pool. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr>
+<td>minidle</td>
+<td>int</td>
+<td>The minimum number of idle connections to be allowed in the connection pool at a given time. Specify 0 or a negative value if you want the pool to wait indefinitely.</td>
+</tr>
+<tr>
+<td>poolstatements</td>
+<td>true/ false</td>
+<td>If the value is <code class="codehilite">true</code> , statement pooling is enabled for the pool.</td>
+</tr>
+<tr>
+<td>testonborrow</td>
+<td>true/ false</td>
+<td>If the value is <code class="codehilite">true</code> , objects are validated before they are borrowed from the pool. An object which fails the validation test will be dropped from the pool and another object in the pool will be picked instead.</td>
+</tr>
+<tr>
+<td>testwhileidle</td>
+<td>true/ false</td>
+<td>If the value is <code class="codehilite">true</code> , the objects in the pool will be validated using an idle object evictor (if any exists). Any object which fails this validation test would be dropped from the pool.</td>
+</tr>
+<tr>
+<td>validationquery</td>
+<td>String</td>
+<td>The SQL query that will be used to validate connections from this pool before returning them to the caller.</td>
+</tr>
+</tbody>
+</table>
+<p>The following UI is displayed if you select the <strong>Carbon Datasource</strong>
+option for the <strong>Datasource Type</strong> parameter, indicating that you want
+the connection to the database to be made using an Carbon datasource.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Use Transaction</strong></td>
+<td>This parameter specifies whether the database operation should be performed within a transaction or not. Click <strong>Yes</strong> or <strong>No</strong> as relevant.</td>
+</tr>
+<tr>
+<td><strong>Datasource</strong></td>
+<td>This parameter is used to selected a specific Carbon datasource you want to use to make the connection. All the Carbon datasources which are currently available are included in the list.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Adding SQL statements to the DB Report Mediator</strong></p>
+<p>If you click <strong>Add Statement</strong> , the page will be expanded to display
+the following parameters.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Parameter Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>SQL</strong></td>
+<td>This parameter is used to enter one or more SQL statements.</td>
+</tr>
+<tr class="even">
+<td><strong>Parameters</strong></td>
+<td>This section is used to specify how the values of parameters in the SQL will be determined. A parameter value can be static or calculated at runtime based on a given expression.</td>
+</tr>
+<tr class="odd">
+<td><strong>Parameter Type</strong></td>
+<td><p>The data type of the parameter. Possible values are as follows.</p>
+<ul>
+<li><strong>CHAR</strong></li>
+<li><strong>VARCHAR</strong></li>
+<li><strong>LONGVARCHAR<br />
+</strong></li>
+<li><strong>NUMERIC</strong></li>
+<li><strong>DECIMAL</strong></li>
+<li><strong>BIT</strong></li>
+<li><strong>TINYINT</strong></li>
+<li><strong>SAMLLINT</strong></li>
+<li><strong>INTEGER</strong></li>
+<li><strong>BIGINT</strong></li>
+<li><strong>REAL</strong></li>
+<li><strong>DOUBLE</strong></li>
+<li><strong>DATE</strong></li>
+<li><strong>TIME</strong></li>
+<li><strong>TIMESTAMP</strong></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Property Type</strong></td>
+<td><p>This determines whether the parameter value should be a static value or calculated at run time via an expression.</p>
+<ul>
+<li><strong>Value</strong> : If this is selected, a static value would be considered as the property value and this value should be entered in the <strong>Value/Expression</strong> parameter.</li>
+<li><p><strong>Expression:</strong> If this is selected, the property value will be determined during mediation by evaluating an expression. This expression should be entered in the <strong>Value/Expression</strong> parameter.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Value/Expression</strong></td>
+<td><div class="content-wrapper">
+<p>This parameter is used to enter the static value or the XPath expression used to determine the property value based on the option you selected for the <strong>Property Type</strong> parameter.</p>
+!!! tip
+<p>You can click <strong>NameSpaces</strong> to add namespaces if you are providing an expression. Then the <strong>Namespace Editor</strong> panel would appear where you can provide any number of namespace prefixes and URLs used in the XPath expression.</p>
+
+</div></td>
+</tr>
+<tr class="even">
+<td><strong>Action</strong></td>
+<td>This allows you to delete a parameter.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<h4 id="simple-database-write-operation">Simple database write operation<a class="headerlink" href="#simple-database-write-operation" title="Permanent link">&para;</a></h4>
+<p>This example demonstrates simple database write operations. The DB
+Report mediator writes to a table using the details of the message. It
+updates the stock price of the company using the last quote value, which
+is calculated by evaluating an XPath expression against the response
+message.</p>
+<pre class="codehilite"><code class="language-java linenums">    &lt;dbreport xmlns="http://ws.apache.org/ns/synapse"&gt;
+        &lt;connection&gt;
+            &lt;pool&gt;
+                &lt;driver&gt;org.apache.derby.jdbc.ClientDriver&lt;/driver&gt;
+                &lt;url&gt;jdbc:derby://localhost:1527/esbdb;create=false&lt;/url&gt;
+                &lt;user&gt;esb&lt;/user&gt;
+                &lt;password&gt;esb&lt;/password&gt;
+            &lt;/pool&gt;
+        &lt;/connection&gt;
+        &lt;statement&gt;
+            &lt;sql&gt;&lt;![CDATA[update company set price=? where name =?]]&gt;&lt;/sql&gt;
+            &lt;parameter expression="//m0:return/m1:last/child::text()" type="DOUBLE" xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd"/&gt;
+            &lt;parameter expression="//m0:return/m1:symbol/child::text()" type="VARCHAR" xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd"/&gt;
+        &lt;/statement&gt;
+    &lt;/dbreport&gt;</code></pre>
+
+<h4 id="performing-a-database-write-operation-within-a-transaction">Performing a database write operation within a transaction<a class="headerlink" href="#performing-a-database-write-operation-within-a-transaction" title="Permanent link">&para;</a></h4>
+<p>In this example, <code class="codehilite">&lt;transaction action="new"/&gt;</code> is a
+Transaction Mediator configuration that starts a new transaction. The
+DBReport mediator configuration performs a few write operations incuding
+deleting records when the name matches a specific value derived via an
+expression as well as a few insertions. Once the database operations are
+complete, they are committed via
+<code class="codehilite">&lt;transaction action="commit"/&gt;</code> , which is another
+Transaction Mediator configuration.</p>
+<pre class="codehilite"><code class="language-java linenums">    &lt;definitions xmlns="http://ws.apache.org/ns/synapse"&gt;
+       &lt;sequence name="myFaultHandler"&gt;
+            &lt;log level="custom"&gt;
+                &lt;property name="text" value="** Rollback Transaction**"/&gt;
+            &lt;/log&gt;
+            &lt;transaction action="rollback"/&gt;
+            &lt;send/&gt;
+        &lt;/sequence&gt;
+        &lt;sequence name="main" onError="myFaultHandler"&gt;
+            &lt;in&gt;
+                &lt;send&gt;
+                    &lt;endpoint&gt;
+                        &lt;address uri="http://localhost:9000/services/SimpleStockQuoteService"/&gt;
+                    &lt;/endpoint&gt;
+                &lt;/send&gt;
+            &lt;/in&gt;
+             &lt;out&gt;
+                &lt;transaction action="new"/&gt;
+                &lt;log level="custom"&gt;
+                    &lt;property name="text" value="** Reporting to the Database EIdb**"/&gt;
+                &lt;/log&gt;
+                &lt;dbreport useTransaction="true" xmlns="http://ws.apache.org/ns/synapse"&gt;
+                    &lt;connection&gt;
+                        &lt;pool&gt;
+                            &lt;dsName&gt;java:jdbc/XADerbyDS&lt;/dsName&gt;
+                            &lt;icClass&gt;org.jnp.interfaces.NamingContextFactory&lt;/icClass&gt;
+                            &lt;url&gt;localhost:1099&lt;/url&gt;
+                            &lt;user&gt;EI&lt;/user&gt;
+                            &lt;password&gt;EI&lt;/password&gt;
+                        &lt;/pool&gt;
+                    &lt;/connection&gt;
+                    &lt;statement&gt;
+                         &lt;sql&gt;delete from company where name =?&lt;/sql&gt;
+                         &lt;parameter expression="//m0:return/m1:symbol/child::text()"
+                           xmlns:m0="http://services.samples" xmlns:m1="http://services.samples/xsd"
+                                     type="VARCHAR"/&gt;
+                    &lt;/statement&gt;
+                &lt;/dbreport&gt;
+                &lt;log level="custom"&gt;
+                    &lt;property name="text" value="** Reporting to the Database EIdb1**"/&gt;
+                &lt;/log&gt;
+                &lt;dbreport useTransaction="true" xmlns="http://ws.apache.org/ns/synapse"&gt;
+                    &lt;connection&gt;
+                        &lt;pool&gt;
+                            &lt;dsName&gt;java:jdbc/XADerbyDS1&lt;/dsName&gt;
+                            &lt;icClass&gt;org.jnp.interfaces.NamingContextFactory&lt;/icClass&gt;
+                            &lt;url&gt;localhost:1099&lt;/url&gt;
+                            &lt;user&gt;EI&lt;/user&gt;
+                            &lt;password&gt;EI&lt;/password&gt;
+                        &lt;/pool&gt;
+                    &lt;/connection&gt;
+                    &lt;statement&gt;
+                        &lt;sql&gt;INSERT into company values (?,'c4',?)&lt;/sql&gt;
+                        &lt;parameter expression="//m0:return/m1:symbol/child::text()"
+             xmlns:m1="http://services.samples/xsd" xmlns:m0="http://services.samples"
+                                   type="VARCHAR"/&gt;
+                        &lt;parameter expression="//m0:return/m1:last/child::text()"
+             xmlns:m1="http://services.samples/xsd" xmlns:m0="http://services.samples"
+                                   type="DOUBLE"/&gt;
+                    &lt;/statement&gt;
+                &lt;/dbreport&gt;
+                &lt;transaction action="commit"/&gt;
+                &lt;send/&gt;
+            &lt;/out&gt;
+        &lt;/sequence&gt;
+    &lt;/definitions&gt;</code></pre>
+
+<h4 id="samples">Samples<a class="headerlink" href="#samples" title="Permanent link">&para;</a></h4>
+<p>For more examples of the DB Report mediator, see:</p>
+<ul>
+<li><a href="https://docs.wso2.com/display/EI6xx/Sample+361%3A+Introduction+to+DBReport+Mediator">Sample 361: Introduction to DB Report
+    Mediator</a></li>
+<li><a href="https://docs.wso2.com/display/EI6xx/Sample+362%3A+DBReport+and+DBLookup+Mediators+Together">Sample 362: DB Report and DBLookup Mediators
+    Together</a></li>
+<li><a href="https://docs.wso2.com/display/EI6xx/Sample+363%3A+Reusable+Database+Connection+Pools">Sample 363: Reusable Database Connection
+    Pools</a></li>
+<li><a href="https://docs.wso2.com/display/EI6xx/Sample+271%3A+File+Processing">Sample 271: File
+    Processing</a>
+    (moves files into a database using the VFS transport and the DB
+    Report mediator)</li>
+</ul>
+                
+                  
+                
+              
+  <a href="#" class="cd-top text--replace js-cd-top">Top</a>
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            WSO2 Enterprise Integrator - Documentation
+          </div>
+        
+        &copy;2019 <a href="https://wso2.com/">WSO2</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/lib/highlightjs/highlight.min.js"></script>
+      
+        <script src="../../assets/js/theme.js"></script>
+      
+        <script src="../../assets/lib/backtotop/js/util.js"></script>
+      
+        <script src="../../assets/lib/backtotop/js/main.js"></script>
+      
+    
+  </body>
+</html>
