@@ -151,6 +151,31 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://wso2.com/integration/setup/adding_a_custom_proxy__path/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/configuring_proxy_servers/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/changing_default_ports/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/enabling_CORS_for_data_services/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/configuring_timestamp_conversion_for_rdbms/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://wso2.com/integration/setup/security/creating_keystores/</loc>
      <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
@@ -171,6 +196,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://wso2.com/integration/setup/security/gdpr_ei/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://wso2.com/integration/setup/security/single_key_encryption/</loc>
      <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
@@ -187,6 +217,36 @@
     </url>
     <url>
      <loc>https://wso2.com/integration/setup/security/mitigating_css/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/security/configuring_SAML2_SSO_across_prods/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/security/securing_carbon_applications/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/customizing_error_pages/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/configuring_task_scheduling_comp/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/govern_ext_refs_across_env/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/setup/enabling_SSL_tunneling_thru_proxy_server/</loc>
      <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -247,6 +307,61 @@
     </url>
     <url>
      <loc>https://wso2.com/integration/administer-and-observe/observability/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/jmx_monitoring/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/snmp_monitoring/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/monitoring_with_prometheus/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/monitoring_logs/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/monitoring_access_logs/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/configuring_log4j_properties/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/configuring_the_log_provider/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/masking_sensitive_info_in_logs/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/starting_tcp_mon/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/message_monitoring_with_tcpmon/</loc>
+     <lastmod>2019-06-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wso2.com/integration/administer-and-observe/other_usages_of_tcpmon/</loc>
      <lastmod>2019-06-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
